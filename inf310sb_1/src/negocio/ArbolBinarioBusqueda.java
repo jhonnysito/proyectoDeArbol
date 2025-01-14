@@ -23,6 +23,7 @@ public class ArbolBinarioBusqueda<k extends Comparable<k> ,v> implements IArbolB
     
     
     public void insertar(k clave, v valor) {
+        int cambio=0;
         if(esArbolVacio()){
             raiz=new NodoBinario<>(clave,valor);
         }else {
